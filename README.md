@@ -1,17 +1,16 @@
 # problemC
-Course unit: Computation Theory (TC) - Problem C in ocaml
+Course unit: Computational Theory (CT) - Problem C in ocaml
 
 Resolution of Problem C in ocaml
 
-
 ## Problema
 
-O objectivo deste exerccio é a implementação do processo de execução de máquinas de Turing, como descrito nos apontamentos das aulas da disciplina. Vamos nos limitar neste exercício ao caso das execuções que terminam em tempo razoável. Uma execução é razoável quando termina em menos do que 200 passos.  
+O objectivo deste exercício é a implementação do processo de execução de máquinas de Turing. Vamos limitar-nos neste exercício ao caso das execuções que terminam em tempo razoável. Uma execução é razoável quando termina em menos do que 200 passos.  
 
 ## Input
 
 O input introduz o valor inicial da fita e a definiçaão da máquina de Turing M = (Q, Γ, Σ, δ, s, ], F).  
-Para simplificar o formatos dos dados em entrada admitiremos aqui que o conjunto dos estados Q é sempre da forma {1 . . . n} (n inteiro), que Σ = {a, . . . , z}, que Γ = {], A, B, . . . , Z} ∪ Σ e que o estado inicial é o estado 1.  
+Para simplificar o formato dos dados de entrada admitiremos aqui que o conjunto dos estados Q é sempre da forma {1 . . . n} (n inteiro), que Σ = {a, . . . , z}, que Γ = {], A, B, . . . , Z} ∪ Σ e que o estado inicial é o estado 1.  
 
 Na primeira linha é introduzida a palavra por reconhecer. Esta palavra só é constituida por carácter do alfabeto Σ tem por comprimento máximo 50 caracteres.  
 Nas linhas restantes são introduzidos os dados necessários à definição completa da máquina de Turing M.  
@@ -24,7 +23,7 @@ Assim M = (Q, Γ, Σ, δ, s, ], F) é introduzida por:
 
 ## Output
 
-Dois casos: ou a execu¸c˜ao decorreu e terminou em menos do que 200 passos (≤ 200) ou não:  
+Dois casos: ou a execução decorreu e terminou em menos do que 200 passos (≤ 200) ou não:  
 
 1. No primeiro caso o input é constituido por três linhas. Seja (s, α, β) a configuração final. Se s é final então a primeira linha contém a palavra YES, senão a palavra NO. A segunda linha apresenta o conteúdo da fita, ou seja esta linha apresenta a palavra αβ. Relembramos que e é a palavra vazia e como tal é o elemento neutro da concatenação. A terceira linha apresenta um inteiro. Este inteiro é o número total de passos que a execução necessitou para terminar.  
 2. No segundo caso a resposta deve ser uma ´unica linha com o conteúdo: DON’T KNOW  
